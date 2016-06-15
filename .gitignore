@@ -1,0 +1,60 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JTextField;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JButton;
+import javax.swing.table.DefaultTableModel;
+
+public class Jogo {
+
+	static JPanel painel = new JPanel();
+	//----------------------------------------------------------------------------------------------------------------------------------
+	//TELAS:
+	static JFrame telainicial = new JFrame("ANGRY BIRDS ULTRA - GAMING");
+	static JFrame teladetutorial = new JFrame("TELA DE TUTORIAL DE JOGO");
+	static JFrame teladefazes = new JFrame("FAZES");
+	static JFrame teladejogo = new JFrame("ANGRY BIRDS ULTRA");
+	//----------------------------------------------------------------------------------------------------------------------------------
+	//BOTÕES DE TELA INICIAL:
+	static JButton comecar = new JButton("START");
+	static JButton sair = new JButton("SAIR");
+	static JButton ajuda = new JButton("AJUDA");
+	//----------------------------------------------------------------------------------------------------------------------------------
+	//BOTÕES DE MENU DE JOGO:
+	static JButton iniciar = new JButton("JOGAR");
+	static JButton fazes = new JButton("NIVEIS"); 
+	static JButton tutorial = newq JButton("TUTORIAL DO JOGO");
+	//----------------------------------------------------------------------------------------------------------------------------------
+	//BOTÕES AUXILIARES:
+	static JButton proximo = new JButton(">>");
+	static JButton anterior = new JButton("<<");
+	static JButton selecionar = new JButton("0");
+	//----------------------------------------------------------------------------------------------------------------------------------
+	//TELA INICIAL:
+	static void telainicial() {
+
+		telainicial.setTitle("ANGRY BIRDS ULTRA - GAMING");
+		telainicial.setSize(1365, 700);
+		telainicial.setLayout(null);
+		telainicial.setVisible(true);
+		telainicial.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		telainicial.setResizable(false);
+		telainicial.add(comecar).setBounds(300, 300, 300, 100);
+		telainicial.add(ajuda).setBounds(500, 200, 300, 100);
+		telainicial.add(sair).setBounds(700, 300, 300, 100);
+
+		telainicial.getContentPane().setBackground(Color.BLACK);
+		cadastrar.setForeground(Color.BLACK);
+		sair.setForeground(Color.BLACK);
+
+	}
+	
